@@ -1,5 +1,6 @@
+import { cart } from '../data/cart.js';
+
 let productsHTML = '';
-let cartQuantityHTML = '';
 
 products.forEach((product) => {
   productsHTML += `
@@ -42,7 +43,7 @@ products.forEach((product) => {
 
       <div class="product-spacer"></div>
 
-      <div class="added-to-cart">
+      <div class="added-to-cart js-added-to-cart">
         <img src="images/icons/checkmark.png">
         Added
       </div>
@@ -84,6 +85,12 @@ document.querySelectorAll(".js-add-to-cart")
 
       cart.forEach((item) => {
         cartQuantity += item.quantity;
+        document.querySelector(".js-added-to-cart").style.opacity = "1";
+
+        const intervalId = setInterval(() => {
+          document.querySelector(".js-added-to-cart").style.opacity = "0";
+        }, 2000);
+
       })
 
       document.querySelector(".js-cart-quantity").innerHTML = cartQuantity;
