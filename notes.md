@@ -1,5 +1,5 @@
 ## Rules for javascript software development
 
-1. Save the data
-2. Generate the HTML
-3. Make it interactive
+1. Save the data (Model)
+2. Generate the HTML (View)
+3. Make it interactive (Controller)
