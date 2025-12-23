@@ -10,4 +10,5 @@
 2. Re-run the tests
 3. Save to Git
 
-## Object-Oriented Programming
+## Object-Oriented Programming (Organize code into objects)
+- Class is an object generator
