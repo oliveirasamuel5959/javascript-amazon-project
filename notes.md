@@ -11,4 +11,7 @@
 3. Save to Git
 
 ## Object-Oriented Programming (Organize code into objects)
-- Class is an object generator
+
+1. Class is an object generator
+2. Atributes and methods
+3. Private and public properties and methods
