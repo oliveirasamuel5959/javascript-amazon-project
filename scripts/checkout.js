@@ -5,10 +5,12 @@ import { renderPaymentSummary } from "./checkout/paymentSummary.js";
 
 async function loadPage() {
   console.log('Page loaded');
+  return 'value2';
 }
 
-loadPage().then(() => {
+loadPage().then((value) => {
   console.log('Next step after page load');
+  console.log(value);
 })
 
 new Promise((resolve) => {
