@@ -23,4 +23,4 @@
 2. Frontend sends information to backend using API through HTTP Protocol
 3. Promises to handle async code instead of callbacks
 4. Fetch HTTP requests
-5. Using fetch with promises steps to GET from API
+5. Using fetch with promises steps to GET from API Data
