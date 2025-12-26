@@ -16,3 +16,8 @@
 2. Atributes and methods
 3. Private and public properties and methods
 4. Inheritance lets us reuse code between classes
+
+## Backend
+
+1. Manages the data of the software
+2. Frontend sends information to backend using API through HTTP Protocol
