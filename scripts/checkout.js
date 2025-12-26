@@ -7,6 +7,10 @@ async function loadPage() {
   console.log('Page loaded');
 }
 
+loadPage().then(() => {
+  console.log('Next step after page load');
+})
+
 new Promise((resolve) => {
   
 })
