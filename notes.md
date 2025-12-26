@@ -25,3 +25,4 @@
 4. Fetch HTTP requests
 5. Using fetch with promises steps to GET from API Data
 6. Async Await (Even better way to handle asynchronous code)
+7. async function test() {} (async makes a function return a promise)
