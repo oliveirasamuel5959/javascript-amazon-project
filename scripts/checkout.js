@@ -5,10 +5,16 @@ import { renderPaymentSummary } from "./checkout/paymentSummary.js";
 // import '../data/backend-practice.js';
 
 async function loadPage() {
-  await loadProductsFetch();
+  try {
+    await loadProductsFetch();
+  } catch (error) {
+    console.error('Error loading products:');
+  } 
+
+  renderOrderSummary();
+  renderPaymentSummary();
+
 }
 
 loadPage();
 
-renderOrderSummary();
-renderPaymentSummary();
