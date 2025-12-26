@@ -1,3 +1,4 @@
+import { loadProductsFetch } from "../data/products.js";
 import { renderOrderSummary } from "./checkout/orderSummary.js";
 import { renderPaymentSummary } from "./checkout/paymentSummary.js";
 // import '../data/cart-class.js';
@@ -5,6 +6,9 @@ import { renderPaymentSummary } from "./checkout/paymentSummary.js";
 
 async function loadPage() {
   console.log('Page loaded');
+
+  await loadProductsFetch();
+
   return 'value2';
 }
 
