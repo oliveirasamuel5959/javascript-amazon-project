@@ -5,7 +5,7 @@ import { renderPaymentSummary } from "./checkout/paymentSummary.js";
 // import '../data/backend-practice.js';
 
 async function loadPage() {
-  console.log('Page loaded');
+  console.log('load page');
 
   await loadProductsFetch();
 
@@ -13,7 +13,7 @@ async function loadPage() {
 }
 
 loadPage().then((value) => {
-  console.log('Next step after page load');
+  console.log('Next step');
   console.log(value);
 })
 
