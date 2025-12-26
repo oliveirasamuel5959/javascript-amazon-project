@@ -6,14 +6,15 @@ import { renderPaymentSummary } from "./checkout/paymentSummary.js";
 
 async function loadPage() {
   try {
+
+    throw 'error1'
+
     await loadProductsFetch();
   } catch (error) {
     console.error('Error loading products:');
   } 
-
   renderOrderSummary();
   renderPaymentSummary();
-
 }
 
 loadPage();
